@@ -1,0 +1,481 @@
+/*Header Fonts*/
+.btn-wsp{
+  position:fixed;
+  width:60px;
+  height:60px;
+  line-height: 63px;
+  bottom:25px;
+  right:25px;
+  background:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:35px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 300ms ease;
+}
+.btn-wsp:hover{
+  background: #20ba5a;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+/*Body Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+}
+
+/*Heeader*/
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Arimo", sans-serif;
+  font-size: 1.5em;
+  background-color: black;
+  color: white;
+  padding-left: 3em;
+  padding-right: 3em;
+  list-style-type: none;
+  visibility: visible;
+}
+
+.headerHidden {
+  position: absolute;
+  visibility: hidden;
+}
+
+.searchBar a,
+header a,
+.subHeader a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a:hover,
+#searchButton:hover,
+.subHeader a:hover {
+  color: inherit;
+  opacity: 0.8;
+}
+
+.searchBarLogo,
+.searchBarText,
+.closeSearchBar,
+.headerLogo,
+.headerUserInfo ul,
+.headerInfo ul,
+.subHeaderInfo ul {
+  margin: 0,5cm;
+}
+
+.searchBarLogo img,
+.headerLogo img {
+  width: 8cm;
+}
+
+.closeSearchBar,
+.headerUserInfo ul,
+.subHeaderInfo ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.searchBarText,
+.headerInfo ul,
+.subHeaderInfo ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  font-size: 0.8em;
+}
+
+.headerInfo ul,
+.subHeaderInfo ul {
+  letter-spacing: 0.25em;
+  flex-wrap: wrap;
+}
+
+.headerInfo li :hover,
+.subHeaderInfo li {
+  transition: 0.1s;
+}
+
+/*Sub Header*/
+.subHeader {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Arimo", sans-serif;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding-left: 3em;
+  padding-right: 3em;
+  list-style-type: none;
+  visibility: visible;
+}
+
+.subHeaderInfo {
+  margin-right: 2em;
+}
+
+/*Show SubHeader*/
+
+/*Search Bar*/
+.searchBar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Arimo", sans-serif;
+  font-size: 1.5em;
+  background-color: black;
+  color: white;
+  padding-left: 3em;
+  padding-right: 3em;
+  list-style-type: none;
+  transition: 0.2s;
+  visibility: visible;
+}
+.searchBarHidden {
+  position: absolute;
+  visibility: hidden;
+  transition: position 0.2s;
+}
+
+.searchBarText input {
+  font-family: "Arimo", sans-serif;
+  margin-right: 7em;
+}
+
+/* Main Page*/
+.mainPage img {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 55em;
+  filter: brightness(80%);
+}
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 5fr 1fr; */
+  /* align-items: center; */
+  /* grid-gap: 2em; */
+  text-align: center;
+  color: white;
+  height: 55em;
+}
+
+.mainContent .arrows {
+  font-size: 2.5em;
+  padding: 1em;
+}
+
+.mainContent .arrows:hover {
+  opacity: 0.8;
+}
+
+#changePicNext {
+  /* justify-self: end; */
+}
+
+.mainText {
+}
+
+.mainText h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.mainText p {
+  font-size: 2em;
+  padding: 0.5em;
+}
+
+/*Slide Indicator*/
+.slideIndicators {
+  display: flex;
+  justify-content: center;
+  transform: translateY(16em);
+}
+.slideIndicator {
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  /* background-color: white; */
+  border: 3px solid white;
+  margin: 0.5em;
+}
+
+/*Cards*/
+.Cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardCollector {
+  overflow-x: auto;
+}
+.cardCollectionTitles {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-self: flex-start;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.cardCollection {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  flex-wrap: nowrap;
+  margin-left: 3em;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cardCollection::-webkit-scrollbar {
+  display: none;
+}
+
+#newReleases {
+  margin-bottom: 3em;
+}
+#releasingSoon {
+  margin-bottom: 6em;
+}
+
+#limitedSizes {
+  margin-bottom: 6em;
+}
+
+.cardContainer {
+  display: flex;
+}
+
+.cardContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  height: 32em;
+  width: 27em;
+  background-color: #f6f6f6;
+  border-radius: 0.8em;
+  margin: 2em;
+  filter: drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.3));
+}
+
+.Card img {
+  height: 20em;
+  object-fit: cover;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.CardInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.1em;
+}
+
+.CardInfo h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 0.7em;
+  margin-top: 0.8em;
+}
+.CardInfo p {
+  margin-left: 1.5em;
+  margin-top: 1em;
+}
+.CardInfo a {
+  align-self: center;
+  margin-top: 2em;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 1em;
+  background-color: gray;
+  padding: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.cardArrows {
+  font-size: 2.5em;
+  color: black;
+  position: relative;
+  align-self: center;
+}
+
+.cardArrows:hover {
+  opacity: 0.5;
+}
+
+.leftArrows {
+  margin-left: 1em;
+}
+.rightArrows {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* Shoe Viewer*/
+.shoeViewer {
+  margin-bottom: 7em;
+}
+.shoeViewer img {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 40em;
+  filter: brightness(80%);
+}
+.shoeViewerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 40em;
+}
+
+.shoeViewerContent .arrows {
+  font-size: 2.5em;
+  padding: 1em;
+}
+
+.shoeViewerContent .arrows:hover {
+  opacity: 0.8;
+}
+
+.shoeViewerText {
+  text-align: left;
+  margin-top: 15em;
+}
+/**/
+.shoeViewerText h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.shoeViewerText p {
+  font-size: 2em;
+  padding-top: 0.3em;
+}
+
+/*Cant Find Search Bar*/
+.cantFind {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  margin-top: 8em;
+  margin-bottom: 5em;
+}
+
+.cantFindSearchBar i {
+  position: absolute;
+  font-size: 2.3em;
+  margin: 0.3em;
+  margin-left: 0.8em;
+  font-weight: bold;
+  padding-top: 0.3em;
+  padding-bottom: 0.5em;
+  padding-right: 3em;
+}
+
+.cantFindSearchBar input {
+  border-radius: 2em;
+  border: 2px solid black;
+  font-size: 2em;
+  padding-left: 2.8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 100%;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Arimo", sans-serif;
+  background-color: black;
+  color: white;
+  list-style-type: none;
+  padding: 5em;
+  margin-top: 4em;
+}
+
+footer img {
+
+  width: 20em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+}
+footer a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: 0.2s;
+}
+
+footer a:hover {
+  color: inherit;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+footer li {
+  padding-bottom: 1.5em;
+}
+
+footer ul {
+  margin-left: 5.2em;
+}
+
+/*for Mobile*/
+@media only screen and (max-width: 600px) {
+}
